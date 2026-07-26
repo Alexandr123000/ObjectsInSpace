@@ -1,7 +1,44 @@
 body{ background-color: black;}
 img { border-radius: 0.5em; }
 
-#header-img {width 100%; height: 30%;}
+
+ul {list-style: none; padding: 0; margin: 0;}
+li {margin: 0; padding: 0;}
+a {text-decoration: none; color: #000; }
+
+nav ul li {display: inline-block; margin-right: 2em;}
+
+/*nav {background-color: black; padding: 1em; text-align: center; }
+
+nav ul li a {color: #56047c; text-decoration: none; background-color: #060548; padding: 1em 1.5em; border-radius: 0.5em; }
+
+nav ul li a:hover {background-color: #030240; }
+*/
+
+/*nav {background-color: #02366e; padding: 1em; text-align: center;}
+    */
+button {
+    background-color: #02366e;
+    color: #737373;
+    text-decoration: none;
+    background-color: #060548;
+    padding: 1em 1.5em;
+    border-radius: 0.8em;
+    border: 1px solid #000000;
+    font-size: 12px;
+    font-weight: 700;
+    width: 10em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {background-color: #3a0449; color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
+button:active {transform: translateY(1px);}
+
+
+
+#header-img {width: 100%; height: 30%;}
 
 
 .unit-img {height: 30%; width: 30%}
