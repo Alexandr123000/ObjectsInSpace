@@ -43,7 +43,30 @@ button:active {transform: translateY(1px);}
 
 
 #header-img {width: 100%; height: 30%;}
-
+#description {
+    color: #737373;
+    text-decoration: none;
+    font-size: 50px;
+    border: none;
+    background-color: black;
+    font-weight: 500;
+    width: 95%;
+    line-height: 150%;
+}
+#description::before{
+    margin-left: auto;
+}
+#description::after, #description::before{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #3a0449;
+    display: block;
+    transition: 0.7s;
+}
+#description:hover::after, #description:hover::before{
+    width: 100%;
+}
 
 .unit-img {height: 30%; width: 30%}
 
