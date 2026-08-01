@@ -1,13 +1,9 @@
-body{ background-color: black;}
+body{ background-color: black; }
 img { border-radius: 0.5em; }
-
-
-ul {list-style: none; padding: 0; margin: 0;}
-li {margin: 0; padding: 0;}
-a {text-decoration: none; color: #000; }
-
-nav ul li {display: inline-block; margin-right: 2em;}
-
+ul { list-style: none; padding: 0; margin: 0; }
+li { margin: 0; padding: 0; }
+a { text-decoration: none; color: #000; }
+nav ul li { display: inline-block; margin-right: 2em; }
 button {
     background-color: #02366e;
     color: white;
@@ -23,85 +19,53 @@ button {
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-
-/****************/
-
-#stars-container {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: 0.6s;
-    /*backdrop-filter: blur(2rem);*/
-    /*border-radius: 10rem;*/
-}
-
-#stars {
-    position: relative;
-    background: transparent;
-    width: 100%;
-    height: 100%;
-}
-
+/**********************************Stars*****************************/
 #stars::after {
     content: "";
     position: absolute;
-    top: -20rem;
-    left: -200rem;
-    width: 100%;
-    height: 100%;
-    animation: Rotate 100s linear infinite;
+    top: 0;
+    left: -40%;
+    width: 1000%;
+    height: 1000%;
+    animation: Skew 30s linear infinite;
 }
-
-#stars::after {
-    background-image: radial-gradient(white 1px, transparent 1%);
-    background-size: 40px 40px;
-}
-
+#stars::after { background-image: radial-gradient(white 1px, transparent 1%); background-size: 150px 200px; }
 #stars::before {
     content: "";
     position: absolute;
     top: 0;
     left: -40%;
-    width: 160%;
-    height: 480%;
-    animation: Animate 30s linear infinite;
+    width: 1000%;
+    height: 1000%;
+    animation: Animate 100s linear infinite;
 }
-
 #stars::before {
     background-image: radial-gradient(white 1px, transparent 1%);
-    background-size: 40px 40px;
+    background-size: 170px 300px;
     opacity: 0.4;
 }
 
 @keyframes Animate {
     from {
-        transform: translateY(0);
+        transform: skew(40deg, 0deg) translateY(0);
     }
     to {
-        transform: translateY(-140rem);
+        transform: skew(40deg, 0deg) translateY(-140rem);
     }
 }
-
-@keyframes Rotate {
+@keyframes Skew {
     from {
-        transform: rotate(360deg);
+        transform: skew(50deg, 0deg) translateY(0);
     }
     to {
-        transform: rotate(0);
+        transform: skew(50deg, 0deg) translateY(-200rem);
     }
 }
+/********************************************************************/
+button:hover { background-color: #3a0449; color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+button:active { transform: translateY(1px); }
 
-/****************************/
-
-button:hover {background-color: #3a0449; color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
-button:active {transform: translateY(1px);}
-
-
-
-#header-img {width: 100%; height: 30%;}
+#header-img {width: 100px; height: 100px; } /* width: 100%; height: 30%; */
 #description {
     color: white;
     text-decoration: none;
@@ -112,26 +76,39 @@ button:active {transform: translateY(1px);}
     width: 95%;
     line-height: 150%;
 }
-#description::before{
-    margin-left: auto;
+#description::before { margin-left: auto; }
+#description::after, #description::before { content: ''; width: 0%; height: 5px; background: #3a0449; display: block; transition: 0.7s; }
+#description:hover::after, #description:hover::before { width: 100%; }
+#stars-container { position: absolute; z-index: -1; width: 100%; height: 100%; overflow: hidden; transition: 0.6s; }
+#stars { position: relative; background: transparent; width: 100%; height: 100%; }
+
+#nav_li { margin-left: 100px; float: left;}
+#nav_a {
+    margin-left: 5px;
+    float: left;
+    color: white;
+    border: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    padding: 7px;
 }
-#description::after, #description::before{
-    content: '';
-    width: 0%;
-    height: 5px;
-    background: #3a0449;
+
+/*
+#ul.nav-id { margin-left: 0px; padding-left: 5px; list-style: none; }
+#nav_li-id { float: left; }
+#ul.nav_a-id {
     display: block;
-    transition: 0.7s;
+    width: 7em;
+    padding: 12px;
+    margin: 0 4px;
+    background-color: antiquewhite;
+    border: 2px dotted green;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
 }
-#description:hover::after, #description:hover::before{
-    width: 100%;
-}
+#ul.nav_a-id:hover { background-color: brown; color: antiquewhite; }
+*/
 
-.unit-img {height: 30%; width: 30%}
-
-.container {display: flex; height: 20%}
-
-
-
-
-
+.unit-img { height: 30%; width: 30% }
+.container { display: flex; height: 20% }
