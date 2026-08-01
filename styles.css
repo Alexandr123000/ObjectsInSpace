@@ -7,23 +7,10 @@ li {margin: 0; padding: 0;}
 a {text-decoration: none; color: #000; }
 
 nav ul li {display: inline-block; margin-right: 2em;}
-/*nav {background-color: black; padding: 1em; text-align: center; }
-
-nav ul li a {color: #56047c; text-decoration: none; background-color: #060548; padding: 1em 1.5em; border-radius: 0.5em; }
-
-nav ul li a:hover {background-color: #030240; }
-*/
-
-/*nav {background-color: #02366e; padding: 1em; text-align: center;}
-    */
-
-
-
-
 
 button {
     background-color: #02366e;
-    color: #737373;
+    color: white;
     text-decoration: none;
     background-color: #060548;
     padding: 1em 1.5em;
@@ -37,6 +24,78 @@ button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+
+/****************/
+
+#stars-container {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.6s;
+    /*backdrop-filter: blur(2rem);*/
+    /*border-radius: 10rem;*/
+}
+
+#stars {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+#stars::after {
+    content: "";
+    position: absolute;
+    top: -20rem;
+    left: -200rem;
+    width: 100%;
+    height: 100%;
+    animation: Rotate 100s linear infinite;
+}
+
+#stars::after {
+    background-image: radial-gradient(white 1px, transparent 1%);
+    background-size: 40px 40px;
+}
+
+#stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 160%;
+    height: 480%;
+    animation: Animate 30s linear infinite;
+}
+
+#stars::before {
+    background-image: radial-gradient(white 1px, transparent 1%);
+    background-size: 40px 40px;
+    opacity: 0.4;
+}
+
+@keyframes Animate {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-140rem);
+    }
+}
+
+@keyframes Rotate {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+/****************************/
+
 button:hover {background-color: #3a0449; color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
 button:active {transform: translateY(1px);}
 
@@ -44,7 +103,7 @@ button:active {transform: translateY(1px);}
 
 #header-img {width: 100%; height: 30%;}
 #description {
-    color: #737373;
+    color: white;
     text-decoration: none;
     font-size: 50px;
     border: none;
