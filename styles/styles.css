@@ -2,8 +2,19 @@ body{ background-color: black; }
 img { border-radius: 0.5em; }
 ul { list-style: none; padding: 0; margin: 0; }
 li { margin: 0; padding: 0; }
-a { text-decoration: none; color: #000; }
+a { text-decoration: none; color: white; }
+p { color: white; font-size: 22px; }
 nav ul li { display: inline-block; margin-right: 2em; }
+h1 { color: white; width: 80%; }
+table {
+    width: 50%;
+    border-top: 10px solid #ff6a00;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 2px solid green;
+}
+td { color: white; padding: 10px; border: 2px solid #02366e;}
 button {
     background-color: #02366e;
     color: white;
@@ -65,7 +76,7 @@ button {
 button:hover { background-color: #3a0449; color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
 button:active { transform: translateY(1px); }
 
-#header-img {width: 100px; height: 100px; } /* width: 100%; height: 30%; */
+#header-img { width: 10px; height: 10px; } /* width: 100%; height: 30%; */
 #description {
     color: white;
     text-decoration: none;
