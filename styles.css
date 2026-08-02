@@ -29,7 +29,7 @@ button {
     height: 1000%;
     animation: Skew 30s linear infinite;
 }
-#stars::after { background-image: radial-gradient(white 1px, transparent 1%); background-size: 150px 200px; }
+#stars::after { background-image: radial-gradient(white 1px, transparent 1%); background-size: 350px 200px; }
 #stars::before {
     content: "";
     position: absolute;
