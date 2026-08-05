@@ -24,7 +24,7 @@
     </nav>
     <header>
         <center>
-            <h1>Space Objects</h1>
+            <h1 id="header"></h1>
             <figure>
                 <img style="width: 50%; height: 15%; border: 5px solid #02366e; border-radius: 100px; " src="images/HugeSpace.jpg">
                 <figcaption style="color: #02366e">
@@ -46,65 +46,29 @@
             </div>
         </div>
     </center>
-        <p>
-            The Milky Way is a spiral galaxy and contains our Solar System. The structure of this galaxy 
-            is as follows:
-            <ol>
-                <li>Core</li>
-                The Milky Way contains a supermassive black hole at its center.
-                <li>Disk</li>
-                The disk is a flat structure that contains most of the stars.
-                <li>Bulge</li>
-                The core surrounds a spheroidal cluster of stars. The bulge consists mostly of old stars
-                and has a high density.
-                <li>Bar</li>
-                The bar crosses the center of the Milky Way and connects the pirral arms.
-                <li>Spiral Arms</li>
-                The galaxy has several spiral arms, including: Orion Arm, Cygnus Arm, Perseus Arm.
-                <li>Halo</li>
-                The halo is a spheroidal region surrounding the galactic disk. This region contains globular clusters,
-                dark matter, and old stars.
-                <li>Dark matter</li>
-                Dark matter is an invisible substance that makes up a significant postion of the galaxy's mass. It exerts 
-                a gravitational pull on visible matter and emits no light.
-            </ol>
-        </p>
-        <center>
-        <table>
-            <tr>
-                <th>Property</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Mean Diameter</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Mean Radius</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Mass</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Surface Gravity</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Earth-Moon Distance</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Surface Rock Age</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Formation Age</td>
-                <td></td>
-            </tr>
-        </table>
-    </center>
+    <p>
+        The Milky Way is a spiral galaxy and contains our Solar System. The structure of this galaxy
+        is as follows:
+        <ol>
+            <li>Core</li>
+            The Milky Way contains a supermassive black hole at its center.
+            <li>Disk</li>
+            The disk is a flat structure that contains most of the stars.
+            <li>Bulge</li>
+            The core surrounds a spheroidal cluster of stars. The bulge consists mostly of old stars
+            and has a high density.
+            <li>Bar</li>
+            The bar crosses the center of the Milky Way and connects the pirral arms.
+            <li>Spiral Arms</li>
+            The galaxy has several spiral arms, including: Orion Arm, Cygnus Arm, Perseus Arm.
+            <li>Halo</li>
+            The halo is a spheroidal region surrounding the galactic disk. This region contains globular clusters,
+            dark matter, and old stars.
+            <li>Dark matter</li>
+            Dark matter is an invisible substance that makes up a significant postion of the galaxy's mass. It exerts
+            a gravitational pull on visible matter and emits no light.
+        </ol>
+    </p>
     <footer>
         <center>
             <figure>
@@ -115,6 +79,9 @@
             </figure>
         </center>
     </footer>
+    <script>
+        document.getElementById("header").innerHTML = "Space Objects";
+    </script>
 </body>
 
 </html>
