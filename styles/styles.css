@@ -32,7 +32,6 @@ button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 h2 { color: white; }
-/**********************************Stars*****************************/
 #stars::after {
     content: "";
     position: absolute;
@@ -57,7 +56,6 @@ h2 { color: white; }
     background-size: 170px 300px;
     opacity: 0.4;
 }
-
 @keyframes Animate {
     from {
         transform: skew(40deg, 0deg) translateY(0);
@@ -74,11 +72,9 @@ h2 { color: white; }
         transform: skew(50deg, 0deg) translateY(-200rem);
     }
 }
-/********************************************************************/
 button:hover { background-color: #3a0449; color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
 button:active { transform: translateY(1px); }
-
-#header-img { width: 10px; height: 10px; } /* width: 100%; height: 30%; */
+#header-img { width: 10px; height: 10px; }
 #description {
     color: white;
     text-decoration: none;
@@ -94,8 +90,7 @@ button:active { transform: translateY(1px); }
 #description:hover::after, #description:hover::before { width: 100%; }
 #stars-container { position: absolute; z-index: -1; width: 100%; height: 100%; overflow: hidden; transition: 0.6s; }
 #stars { position: relative; background: transparent; width: 100%; height: 100%; }
-
-#nav_li { margin-left: 100px; float: left;}
+#nav_li { margin-left: 100px; float: left; }
 #nav_a {
     margin-left: 5px;
     float: left;
